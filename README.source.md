@@ -144,7 +144,7 @@
 
 <br>
 
-```aura width=860 height=420 link="https://github.com/nitya747?tab=repositories"
+```aura width=860 height=480 link="https://github.com/nitya747?tab=repositories"
 (function() {
   var projects = [
     {
@@ -163,10 +163,21 @@
       tags: ['Python', 'OpenCV', 'Computer Vision']
     }
   ];
+  var tagColors = {
+    'React': '#ec4899',
+    'Node.js': '#9333ea',
+    'Supabase': '#a855f7',
+    'AI APIs': '#db2777',
+    'AI': '#db2777',
+    'Full Stack': '#ec4899',
+    'Python': '#8b5cf6',
+    'OpenCV': '#f472b6',
+    'Computer Vision': '#a855f7'
+  };
   return (
     <div style={{
       width: '100%', height: '100%', background: '#0d0b12',
-      display: 'flex', flexDirection: 'column', fontFamily: 'Inter', padding: '36px 36px',
+      display: 'flex', flexDirection: 'column', fontFamily: 'Inter', padding: '40px 40px',
       borderRadius: 16, border: '1px solid rgba(236, 72, 153, 0.16)', position: 'relative', overflow: 'hidden',
     }}>
     <style>{`
@@ -175,38 +186,39 @@
       @keyframes driftZ { 0%,100%{transform:translate(0,0)} 50%{transform:translate(30px,25px)} }
       @keyframes flowSlow { 0%{transform:translateX(-10%);opacity:0} 20%{opacity:0.12} 80%{opacity:0.12} 100%{transform:translateX(100%);opacity:0} }
     `}</style>
-    <svg width="860" height="420" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <svg width="860" height="480" style={{ position: 'absolute', top: 0, left: 0 }}>
       <defs>
         <radialGradient id="nprojg1" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(236, 72, 153, 0.15)" /><stop offset="100%" stopColor="rgba(236, 72, 153, 0)" /></radialGradient>
         <radialGradient id="nprojg2" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(147, 51, 234, 0.15)" /><stop offset="100%" stopColor="rgba(147, 51, 234, 0)" /></radialGradient>
       </defs>
 
       <g stroke="rgba(255,255,255,0.1)" strokeWidth="1" fill="none">
-        <path d="M0,180 Q200,210 400,160 T860,190" style={{animation: 'flowSlow 22s linear infinite'}} />
+        <path d="M0,200 Q200,240 400,180 T860,220" style={{animation: 'flowSlow 22s linear infinite'}} />
       </g>
 
       <g style={{ animation: 'driftX 30s ease-in-out infinite' }}>
-        <ellipse cx="200" cy="270" rx="160" ry="80" fill="url(#nprojg1)" />
+        <ellipse cx="200" cy="310" rx="160" ry="80" fill="url(#nprojg1)" />
       </g>
       <g style={{ animation: 'driftY 34s ease-in-out infinite' }}>
-        <ellipse cx="680" cy="290" rx="180" ry="90" fill="url(#nprojg2)" />
+        <ellipse cx="680" cy="330" rx="180" ry="90" fill="url(#nprojg2)" />
       </g>
     </svg>
-    <div style={{ zIndex: 10, display:'flex', fontSize:10, fontWeight:700, color:'rgba(216,180,254,0.35)', letterSpacing:'3px', marginBottom: 24 }}>FEATURED PROJECTS</div>
-    <div style={{ zIndex: 10, display:'flex', flexDirection:'column', gap: 24 }}>
+    <div style={{ zIndex: 10, display:'flex', fontSize:10, fontWeight:700, color:'rgba(216,180,254,0.35)', letterSpacing:'3px', marginBottom: 28 }}>FEATURED PROJECTS</div>
+    <div style={{ zIndex: 10, display:'flex', flexDirection:'column', gap: 32 }}>
       {projects.map(function(proj, idx) {
         return (
           <div key={proj.title} style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
-            {idx > 0 && <div style={{ display: 'flex', width: '100%', height: 1, background: 'rgba(255,255,255,0.06)', marginBottom: 24 }} />}
+            {idx > 0 && <div style={{ display: 'flex', width: '100%', height: 1, background: 'rgba(255,255,255,0.06)', marginBottom: 32 }} />}
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', width: '580px', gap: 6 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', width: '540px', gap: 8 }}>
                 <div style={{ display: 'flex', fontSize: 16, fontWeight: 700, color: '#ffffff', letterSpacing: '0.3px' }}>{proj.title}</div>
-                <div style={{ display: 'flex', fontSize: 12.5, color: 'rgba(244, 220, 255, 0.75)', lineHeight: 1.45, fontWeight: 400, letterSpacing: '0.3px' }}>{proj.desc}</div>
+                <div style={{ display: 'flex', fontSize: 12.5, color: 'rgba(244, 220, 255, 0.75)', lineHeight: 1.5, fontWeight: 400, letterSpacing: '0.3px' }}>{proj.desc}</div>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'flex-end', width: '180px' }}>
                 {proj.tags.map(function(tag) {
+                  var color = tagColors[tag] || '#ec4899';
                   return (
-                    <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(236,72,153,0.12)', border: '1px solid rgba(236,72,153,0.35)', color: 'rgba(244,220,255,0.9)', fontSize: 10, fontWeight: 600 }}>{tag}</div>
+                    <div key={tag} style={{ display: 'flex', padding: '4px 10px', borderRadius: 6, background: color+'15', border: '1px solid '+color+'35', color: 'rgba(244,220,255,0.85)', fontSize: 10, fontWeight: 600 }}>{tag}</div>
                   );
                 })}
               </div>
