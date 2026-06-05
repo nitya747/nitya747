@@ -142,11 +142,17 @@
 })()
 ```
 
-<br>
-
-<div align="center">
-  <div style="font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 700; color: rgba(216,180,254,0.35); letter-spacing: 3px; margin-bottom: 16px;">FEATURED PROJECTS</div>
+```aura width=860 height=30
+<div style={{
+  width: '100%', height: '100%',
+  display: 'flex', alignItems: 'center', fontFamily: 'Inter',
+  paddingLeft: 32
+}}>
+  <div style={{ display: 'flex', fontSize: 10, fontWeight: 700, color: 'rgba(216,180,254,0.35)', letterSpacing: '3px' }}>
+    FEATURED PROJECTS
+  </div>
 </div>
+```
 
 ```aura width=860 height=120 link="https://github.com/nitya747/vignette_monorepo"
 <div style={{
