@@ -1,9 +1,9 @@
 ```aura width=860 height=200
 <div style={{
-  width: '100%', height: '100%', background: '#09050d',
+  width: '100%', height: '100%', background: '#0d0b12',
   display: 'flex', alignItems: 'center', fontFamily: 'Inter',
   position: 'relative', overflow: 'hidden', borderRadius: 16,
-  border: '1px solid rgba(255, 0, 127, 0.48)'
+  border: '1px solid rgba(236, 72, 153, 0.28)'
 }}>
 <style>
 {`
@@ -16,9 +16,9 @@
 </style>
 <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
   <defs>
-    <radialGradient id="n1" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 0, 127, 0.6)" /><stop offset="100%" stopColor="rgba(255, 0, 127, 0)" /></radialGradient>
-    <radialGradient id="n2" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(176, 38, 255, 0.55)" /><stop offset="100%" stopColor="rgba(176, 38, 255, 0)" /></radialGradient>
-    <radialGradient id="n3" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 255, 255, 0.22)" /><stop offset="100%" stopColor="rgba(255, 255, 255, 0)" /></radialGradient>
+    <radialGradient id="n1" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(236, 72, 153, 0.35)" /><stop offset="100%" stopColor="rgba(236, 72, 153, 0)" /></radialGradient>
+    <radialGradient id="n2" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(147, 51, 234, 0.35)" /><stop offset="100%" stopColor="rgba(147, 51, 234, 0)" /></radialGradient>
+    <radialGradient id="n3" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 255, 255, 0.12)" /><stop offset="100%" stopColor="rgba(255, 255, 255, 0)" /></radialGradient>
   </defs>
   
   <g>
@@ -29,7 +29,7 @@
     <circle cx="820" cy="40" r="2" fill="#fff" style={{animation: 'pulse 4.5s infinite 1.5s'}} />
   </g>
 
-  <g stroke="rgba(255, 255, 255, 0.3)" strokeWidth="1" fill="none">
+  <g stroke="rgba(255, 255, 255, 0.2)" strokeWidth="1" fill="none">
     <path d="M0,70 Q200,90 400,50 T860,70" style={{animation: 'flow 12s linear infinite'}} />
     <path d="M0,150 Q300,120 500,160 T860,140" style={{animation: 'flow 16s linear infinite 3s'}} />
   </g>
@@ -49,7 +49,7 @@
 
 <div style={{
   position: 'absolute', left: 48, top: 52, width: 96, height: 96,
-  borderRadius: 48, background: 'linear-gradient(135deg, #ff007f, #b026ff)',
+  borderRadius: 48, background: 'linear-gradient(135deg, #ec4899, #8b5cf6)',
   display: 'flex', alignItems: 'center', justifyContent: 'center',
 }}>
   <img src={(github && github.user && github.user.avatarUrl) || 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'} width={88} height={88} style={{ borderRadius: 44 }} />
@@ -64,96 +64,40 @@
   </div>
   <div style={{ display:'flex', gap:8, marginTop:6 }}>
     {['Frontend', 'Full Stack', 'Product Builder'].map(function(tag) {
-      return (<div key={tag} style={{ display:'flex', padding:'4px 12px', borderRadius:20, background:'rgba(255,0,127,0.18)', border:'1px solid rgba(255,0,127,0.55)', color:'rgba(255,190,230,0.95)', fontSize:12, fontWeight:600 }}>{tag}</div>);
+      return (<div key={tag} style={{ display:'flex', padding:'4px 12px', borderRadius:20, background:'rgba(236,72,153,0.12)', border:'1px solid rgba(236,72,153,0.4)', color:'rgba(255,190,230,0.95)', fontSize:12, fontWeight:600 }}>{tag}</div>);
     })}
   </div>
 </div>
 </div>
 ```
 
-```aura width=860 height=140
-(function() {
-  var stats = [
-    { label: 'Repos', value: String((typeof github !== 'undefined' && github.stats && github.stats.totalRepos) || 0), color: '#ff2a85' },
-    { label: 'Stars', value: String((typeof github !== 'undefined' && github.stats && github.stats.totalStars) || 0), color: '#b026ff' },
-    { label: 'Commits', value: String((typeof github !== 'undefined' && github.stats && github.stats.totalCommits) || 0), color: '#ff007f' },
-  ];
-  return (
-    <div style={{
-      width: '100%', height: '100%', background: '#09050d',
-      display: 'flex', alignItems: 'center', justifyContent: 'center',
-      fontFamily: 'Inter', borderRadius: 16, border: '1px solid rgba(255, 0, 127, 0.48)',
-      position: 'relative', overflow: 'hidden',
-    }}>
-    <style>{`
-      @keyframes driftA { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-30px,15px)} }
-      @keyframes driftB { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,-10px)} }
-      @keyframes pulse { 0%,100%{opacity:0.1;transform:scale(0.8)} 50%{opacity:0.8;transform:scale(1.2)} }
-      @keyframes flowFast { 0%{transform:translateX(-10%);opacity:0} 20%{opacity:0.25} 80%{opacity:0.25} 100%{transform:translateX(100%);opacity:0} }
-    `}</style>
-    <svg width="860" height="140" style={{ position: 'absolute', top: 0, left: 0 }}>
-      <defs>
-        <radialGradient id="n4" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 0, 127, 0.5)" /><stop offset="100%" stopColor="rgba(255, 0, 127, 0)" /></radialGradient>
-        <radialGradient id="n5" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(176, 38, 255, 0.5)" /><stop offset="100%" stopColor="rgba(176, 38, 255, 0)" /></radialGradient>
-      </defs>
-      
-      <g>
-        <circle cx="120" cy="20" r="1.5" fill="#fff" style={{animation: 'pulse 3s infinite 0.5s'}} />
-        <circle cx="450" cy="110" r="1" fill="#fff" style={{animation: 'pulse 4s infinite 2s'}} />
-        <circle cx="780" cy="30" r="2" fill="#fff" style={{animation: 'pulse 5s infinite 1s'}} />
-      </g>
-
-      <g stroke="rgba(255,255,255,0.2)" strokeWidth="1" fill="none">
-        <path d="M0,40 Q250,70 450,30 T860,60" style={{animation: 'flowFast 10s linear infinite'}} />
-      </g>
-
-      <g style={{ animation: 'driftA 18s ease-in-out infinite' }}>
-        <ellipse cx="150" cy="70" rx="130" ry="50" fill="url(#n5)" />
-      </g>
-      <g style={{ animation: 'driftB 22s ease-in-out infinite' }}>
-        <ellipse cx="710" cy="70" rx="140" ry="60" fill="url(#n4)" />
-      </g>
-    </svg>
-    {stats.map(function(s, i) {
-      return (
-        <div key={s.label} style={{ zIndex: 10, flexGrow: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '16px 8px', borderRight: i < stats.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none', gap: 5 }}>
-          <div style={{ display:'flex', fontSize:38, fontWeight:800, color:s.color, lineHeight:1 }}>{s.value}</div>
-          <div style={{ display:'flex', fontSize:11, color:'rgba(255,190,230,0.85)', fontWeight:600, letterSpacing:'1.5px' }}>{s.label.toUpperCase()}</div>
-        </div>
-      );
-    })}
-    </div>
-  );
-})()
-```
-
 ```aura width=860 height=280
 (function() {
   var categories = [
-    { title: 'Languages', color: '#ff2a85', items: ['C++', 'Python', 'JavaScript'] },
-    { title: 'Frontend', color: '#ff007f', items: ['React', 'HTML', 'CSS', 'Tailwind CSS'] },
-    { title: 'Backend', color: '#b026ff', items: ['Node.js', 'Express.js'] },
-    { title: 'Database & Infra', color: '#bf55ec', items: ['Supabase', 'Firebase'] },
-    { title: 'AI & Tools', color: '#ff77aa', items: ['OpenAI', 'Git', 'GitHub'] },
+    { title: 'Languages', color: '#db2777', items: ['C++', 'Python', 'JavaScript'] },
+    { title: 'Frontend', color: '#ec4899', items: ['React', 'HTML', 'CSS', 'Tailwind CSS'] },
+    { title: 'Backend', color: '#9333ea', items: ['Node.js', 'Express.js'] },
+    { title: 'Database & Infra', color: '#a855f7', items: ['Supabase', 'Firebase'] },
+    { title: 'AI & Tools', color: '#f472b6', items: ['OpenAI', 'Git', 'GitHub'] },
   ];
   return (
     <div style={{
-      width: '100%', height: '100%', background: '#09050d',
+      width: '100%', height: '100%', background: '#0d0b12',
       display: 'flex', flexDirection: 'column', fontFamily: 'Inter', padding: '32px 32px', gap: 18,
-      borderRadius: 16, border: '1px solid rgba(255, 0, 127, 0.48)', position: 'relative', overflow: 'hidden',
+      borderRadius: 16, border: '1px solid rgba(236, 72, 153, 0.28)', position: 'relative', overflow: 'hidden',
     }}>
     <style>{`
       @keyframes driftX { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,-20px)} }
       @keyframes driftY { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-50px,30px)} }
       @keyframes driftZ { 0%,100%{transform:translate(0,0)} 50%{transform:translate(30px,25px)} }
       @keyframes pulse { 0%,100%{opacity:0.1;transform:scale(0.8)} 50%{opacity:0.8;transform:scale(1.2)} }
-      @keyframes flowSlow { 0%{transform:translateX(-10%);opacity:0} 20%{opacity:0.18} 80%{opacity:0.18} 100%{transform:translateX(100%);opacity:0} }
+      @keyframes flowSlow { 0%{transform:translateX(-10%);opacity:0} 20%{opacity:0.15} 80%{opacity:0.15} 100%{transform:translateX(100%);opacity:0} }
     `}</style>
     <svg width="860" height="280" style={{ position: 'absolute', top: 0, left: 0 }}>
       <defs>
-        <radialGradient id="n6" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 0, 127, 0.5)" /><stop offset="100%" stopColor="rgba(255, 0, 127, 0)" /></radialGradient>
-        <radialGradient id="n7" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(176, 38, 255, 0.5)" /><stop offset="100%" stopColor="rgba(176, 38, 255, 0)" /></radialGradient>
-        <radialGradient id="n8" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 255, 255, 0.22)" /><stop offset="100%" stopColor="rgba(255, 255, 255, 0)" /></radialGradient>
+        <radialGradient id="n6" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(236, 72, 153, 0.3)" /><stop offset="100%" stopColor="rgba(236, 72, 153, 0)" /></radialGradient>
+        <radialGradient id="n7" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(147, 51, 234, 0.3)" /><stop offset="100%" stopColor="rgba(147, 51, 234, 0)" /></radialGradient>
+        <radialGradient id="n8" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 255, 255, 0.08)" /><stop offset="100%" stopColor="rgba(255, 255, 255, 0)" /></radialGradient>
       </defs>
 
       <g>
@@ -163,7 +107,7 @@
         <circle cx="780" cy="240" r="1.5" fill="#fff" style={{animation: 'pulse 3.5s infinite 0.5s'}} />
       </g>
 
-      <g stroke="rgba(255,255,255,0.2)" strokeWidth="1" fill="none">
+      <g stroke="rgba(255,255,255,0.15)" strokeWidth="1" fill="none">
         <path d="M0,100 Q200,130 400,80 T860,110" style={{animation: 'flowSlow 18s linear infinite'}} />
         <path d="M0,220 Q300,190 500,240 T860,210" style={{animation: 'flowSlow 24s linear infinite 5s'}} />
       </g>
@@ -178,7 +122,7 @@
         <ellipse cx="430" cy="90" rx="140" ry="60" fill="url(#n8)" />
       </g>
     </svg>
-    <div style={{ zIndex: 10, display:'flex', fontSize:10, fontWeight:700, color:'rgba(255,190,230,0.85)', letterSpacing:'3px' }}>TECHNICAL SKILLS</div>
+    <div style={{ zIndex: 10, display:'flex', fontSize:10, fontWeight:700, color:'rgba(216,180,254,0.5)', letterSpacing:'3px' }}>TECHNICAL SKILLS</div>
     <div style={{ zIndex: 10, display:'flex', flexDirection:'column', gap:14 }}>
       {categories.map(function(cat) {
         return (
@@ -186,7 +130,7 @@
             <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:120 }}>{cat.title.toUpperCase()}</div>
             <div style={{ display:'flex', flexWrap:'wrap', gap:7 }}>
               {cat.items.map(function(item) {
-                return (<div key={item} style={{ display:'flex', padding:'4px 13px', borderRadius:6, background:cat.color+'25', border:'1px solid '+cat.color+'60', color:'rgba(255,230,250,0.95)', fontSize:12, fontWeight:600 }}>{item}</div>);
+                return (<div key={item} style={{ display:'flex', padding:'4px 13px', borderRadius:6, background:cat.color+'15', border:'1px solid '+cat.color+'35', color:'rgba(244,220,255,0.9)', fontSize:12, fontWeight:600 }}>{item}</div>);
               })}
             </div>
           </div>
@@ -208,7 +152,7 @@
 <br>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=500&size=16&duration=4000&pause=1500&color=ff007f&center=true&vCenter=true&width=860&height=30&lines=the+best+way+to+predict+the+future+is+to+invent+it." alt="Quote" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=500&size=16&duration=4000&pause=1500&color=ec4899&center=true&vCenter=true&width=860&height=30&lines=the+best+way+to+predict+the+future+is+to+invent+it." alt="Quote" />
 </div>
 
 <br>
@@ -217,10 +161,10 @@
 <SocialMediaButton
   icon="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg"
   text="GitHub"
-  backgroundColor="#140a1c"
+  backgroundColor="#16121f"
   width={120}
   height={44}
-  gradientStops={[{ offset: '0%', color: '#ffffff' }, { offset: '100%', color: '#ff007f' }]}
+  gradientStops={[{ offset: '0%', color: '#ffffff' }, { offset: '100%', color: '#ec4899' }]}
 />
 ```
 
@@ -231,7 +175,7 @@
   backgroundColor="#0f111a"
   width={140}
   height={44}
-  gradientStops={[{ offset: '0%', color: '#0077b5' }, { offset: '100%', color: '#b026ff' }]}
+  gradientStops={[{ offset: '0%', color: '#0077b5' }, { offset: '100%', color: '#8b5cf6' }]}
 />
 ```
 
@@ -242,6 +186,6 @@
   backgroundColor="#24141d"
   width={100}
   height={44}
-  gradientStops={[{ offset: '0%', color: '#ffffff' }, { offset: '100%', color: '#ff007f' }]}
+  gradientStops={[{ offset: '0%', color: '#ffffff' }, { offset: '100%', color: '#ec4899' }]}
 />
 ```
