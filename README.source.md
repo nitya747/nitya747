@@ -144,7 +144,7 @@
 
 <br>
 
-```aura width=860 height=350 link="https://github.com/nitya747?tab=repositories"
+```aura width=860 height=420 link="https://github.com/nitya747?tab=repositories"
 (function() {
   var projects = [
     {
@@ -166,7 +166,7 @@
   return (
     <div style={{
       width: '100%', height: '100%', background: '#0d0b12',
-      display: 'flex', flexDirection: 'column', fontFamily: 'Inter', padding: '32px 32px',
+      display: 'flex', flexDirection: 'column', fontFamily: 'Inter', padding: '36px 36px',
       borderRadius: 16, border: '1px solid rgba(236, 72, 153, 0.16)', position: 'relative', overflow: 'hidden',
     }}>
     <style>{`
@@ -175,33 +175,33 @@
       @keyframes driftZ { 0%,100%{transform:translate(0,0)} 50%{transform:translate(30px,25px)} }
       @keyframes flowSlow { 0%{transform:translateX(-10%);opacity:0} 20%{opacity:0.12} 80%{opacity:0.12} 100%{transform:translateX(100%);opacity:0} }
     `}</style>
-    <svg width="860" height="350" style={{ position: 'absolute', top: 0, left: 0 }}>
+    <svg width="860" height="420" style={{ position: 'absolute', top: 0, left: 0 }}>
       <defs>
         <radialGradient id="nprojg1" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(236, 72, 153, 0.15)" /><stop offset="100%" stopColor="rgba(236, 72, 153, 0)" /></radialGradient>
         <radialGradient id="nprojg2" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(147, 51, 234, 0.15)" /><stop offset="100%" stopColor="rgba(147, 51, 234, 0)" /></radialGradient>
       </defs>
 
       <g stroke="rgba(255,255,255,0.1)" strokeWidth="1" fill="none">
-        <path d="M0,150 Q200,180 400,130 T860,160" style={{animation: 'flowSlow 22s linear infinite'}} />
+        <path d="M0,180 Q200,210 400,160 T860,190" style={{animation: 'flowSlow 22s linear infinite'}} />
       </g>
 
       <g style={{ animation: 'driftX 30s ease-in-out infinite' }}>
-        <ellipse cx="200" cy="220" rx="160" ry="80" fill="url(#nprojg1)" />
+        <ellipse cx="200" cy="270" rx="160" ry="80" fill="url(#nprojg1)" />
       </g>
       <g style={{ animation: 'driftY 34s ease-in-out infinite' }}>
-        <ellipse cx="680" cy="240" rx="180" ry="90" fill="url(#nprojg2)" />
+        <ellipse cx="680" cy="290" rx="180" ry="90" fill="url(#nprojg2)" />
       </g>
     </svg>
-    <div style={{ zIndex: 10, display:'flex', fontSize:10, fontWeight:700, color:'rgba(216,180,254,0.35)', letterSpacing:'3px', marginBottom: 20 }}>FEATURED PROJECTS</div>
-    <div style={{ zIndex: 10, display:'flex', flexDirection:'column', gap: 16 }}>
+    <div style={{ zIndex: 10, display:'flex', fontSize:10, fontWeight:700, color:'rgba(216,180,254,0.35)', letterSpacing:'3px', marginBottom: 24 }}>FEATURED PROJECTS</div>
+    <div style={{ zIndex: 10, display:'flex', flexDirection:'column', gap: 24 }}>
       {projects.map(function(proj, idx) {
         return (
           <div key={proj.title} style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
-            {idx > 0 && <div style={{ display: 'flex', width: '100%', height: 1, background: 'rgba(255,255,255,0.06)', marginBottom: 16 }} />}
+            {idx > 0 && <div style={{ display: 'flex', width: '100%', height: 1, background: 'rgba(255,255,255,0.06)', marginBottom: 24 }} />}
             <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-              <div style={{ display: 'flex', flexDirection: 'column', width: '580px', gap: 4 }}>
+              <div style={{ display: 'flex', flexDirection: 'column', width: '580px', gap: 6 }}>
                 <div style={{ display: 'flex', fontSize: 16, fontWeight: 700, color: '#ffffff', letterSpacing: '0.3px' }}>{proj.title}</div>
-                <div style={{ display: 'flex', fontSize: 12.5, color: 'rgba(244, 220, 255, 0.75)', lineHeight: 1.4, fontWeight: 400, letterSpacing: '0.3px' }}>{proj.desc}</div>
+                <div style={{ display: 'flex', fontSize: 12.5, color: 'rgba(244, 220, 255, 0.75)', lineHeight: 1.45, fontWeight: 400, letterSpacing: '0.3px' }}>{proj.desc}</div>
               </div>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'flex-end', width: '180px' }}>
                 {proj.tags.map(function(tag) {
