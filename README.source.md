@@ -3,7 +3,7 @@
   width: '100%', height: '100%', background: '#0d0b12',
   display: 'flex', alignItems: 'center', fontFamily: 'Inter',
   position: 'relative', overflow: 'hidden', borderRadius: 16,
-  border: '1px solid rgba(236, 72, 153, 0.28)'
+  border: '1px solid rgba(236, 72, 153, 0.16)'
 }}>
 <style>
 {`
@@ -11,14 +11,14 @@
   @keyframes drift2 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-40px,20px)} }
   @keyframes drift3 { 0%,100%{transform:translate(0,0)} 50%{transform:translate(25px,10px)} }
   @keyframes pulse { 0%,100%{opacity:0.1;transform:scale(0.8)} 50%{opacity:0.8;transform:scale(1.2)} }
-  @keyframes flow { 0%{transform:translateX(-20%);opacity:0} 20%{opacity:0.35} 80%{opacity:0.35} 100%{transform:translateX(100%);opacity:0} }
+  @keyframes flow { 0%{transform:translateX(-20%);opacity:0} 20%{opacity:0.2} 80%{opacity:0.2} 100%{transform:translateX(100%);opacity:0} }
 `}
 </style>
 <svg width="860" height="200" style={{ position: 'absolute', top: 0, left: 0 }}>
   <defs>
-    <radialGradient id="n1" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(236, 72, 153, 0.35)" /><stop offset="100%" stopColor="rgba(236, 72, 153, 0)" /></radialGradient>
-    <radialGradient id="n2" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(147, 51, 234, 0.35)" /><stop offset="100%" stopColor="rgba(147, 51, 234, 0)" /></radialGradient>
-    <radialGradient id="n3" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 255, 255, 0.12)" /><stop offset="100%" stopColor="rgba(255, 255, 255, 0)" /></radialGradient>
+    <radialGradient id="n1" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(236, 72, 153, 0.18)" /><stop offset="100%" stopColor="rgba(236, 72, 153, 0)" /></radialGradient>
+    <radialGradient id="n2" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(147, 51, 234, 0.16)" /><stop offset="100%" stopColor="rgba(147, 51, 234, 0)" /></radialGradient>
+    <radialGradient id="n3" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 255, 255, 0.06)" /><stop offset="100%" stopColor="rgba(255, 255, 255, 0)" /></radialGradient>
   </defs>
   
   <g>
@@ -29,27 +29,27 @@
     <circle cx="820" cy="40" r="2" fill="#fff" style={{animation: 'pulse 4.5s infinite 1.5s'}} />
   </g>
 
-  <g stroke="rgba(255, 255, 255, 0.2)" strokeWidth="1" fill="none">
-    <path d="M0,70 Q200,90 400,50 T860,70" style={{animation: 'flow 12s linear infinite'}} />
-    <path d="M0,150 Q300,120 500,160 T860,140" style={{animation: 'flow 16s linear infinite 3s'}} />
+  <g stroke="rgba(255, 255, 255, 0.12)" strokeWidth="1" fill="none">
+    <path d="M0,70 Q200,90 400,50 T860,70" style={{animation: 'flow 14s linear infinite'}} />
+    <path d="M0,150 Q300,120 500,160 T860,140" style={{animation: 'flow 18s linear infinite 3s'}} />
   </g>
 
-  <g style={{ animation: 'drift1 20s ease-in-out infinite' }}>
+  <g style={{ animation: 'drift1 24s ease-in-out infinite' }}>
     <ellipse cx="160" cy="100" rx="140" ry="70" fill="url(#n1)" />
     <ellipse cx="120" cy="80" rx="90" ry="40" fill="url(#n1)" />
   </g>
-  <g style={{ animation: 'drift2 24s ease-in-out infinite' }}>
+  <g style={{ animation: 'drift2 28s ease-in-out infinite' }}>
     <ellipse cx="700" cy="110" rx="150" ry="75" fill="url(#n2)" />
     <ellipse cx="640" cy="90" rx="100" ry="45" fill="url(#n2)" />
   </g>
-  <g style={{ animation: 'drift3 18s ease-in-out infinite' }}>
+  <g style={{ animation: 'drift3 22s ease-in-out infinite' }}>
     <ellipse cx="430" cy="40" rx="110" ry="50" fill="url(#n3)" />
   </g>
 </svg>
 
 <div style={{
   position: 'absolute', left: 48, top: 52, width: 96, height: 96,
-  borderRadius: 48, background: 'linear-gradient(135deg, #ec4899, #8b5cf6)',
+  borderRadius: 48, background: 'linear-gradient(135deg, rgba(236,72,153,0.5), rgba(139,92,246,0.5))',
   display: 'flex', alignItems: 'center', justifyContent: 'center',
 }}>
   <img src={(github && github.user && github.user.avatarUrl) || 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'} width={88} height={88} style={{ borderRadius: 44 }} />
@@ -59,12 +59,12 @@
   <div style={{ display:'flex', fontSize:38, fontWeight:800, color:'#ffffff', letterSpacing:'-1px', lineHeight:1 }}>
     Nitya Arora
   </div>
-  <div style={{ display:'flex', fontSize:15, color:'rgba(255, 185, 230, 0.95)', fontWeight:400, letterSpacing:'0.3px' }}>
+  <div style={{ display:'flex', fontSize:15, color:'rgba(255, 185, 230, 0.85)', fontWeight:400, letterSpacing:'0.3px' }}>
     Turning Ideas Into Products
   </div>
   <div style={{ display:'flex', gap:8, marginTop:6 }}>
     {['Frontend', 'Full Stack', 'Product Builder'].map(function(tag) {
-      return (<div key={tag} style={{ display:'flex', padding:'4px 12px', borderRadius:20, background:'rgba(236,72,153,0.12)', border:'1px solid rgba(236,72,153,0.4)', color:'rgba(255,190,230,0.95)', fontSize:12, fontWeight:600 }}>{tag}</div>);
+      return (<div key={tag} style={{ display:'flex', padding:'4px 12px', borderRadius:20, background:'rgba(236,72,153,0.06)', border:'1px solid rgba(236,72,153,0.25)', color:'rgba(255,200,240,0.85)', fontSize:12, fontWeight:600 }}>{tag}</div>);
     })}
   </div>
 </div>
@@ -84,20 +84,20 @@
     <div style={{
       width: '100%', height: '100%', background: '#0d0b12',
       display: 'flex', flexDirection: 'column', fontFamily: 'Inter', padding: '32px 32px', gap: 18,
-      borderRadius: 16, border: '1px solid rgba(236, 72, 153, 0.28)', position: 'relative', overflow: 'hidden',
+      borderRadius: 16, border: '1px solid rgba(236, 72, 153, 0.16)', position: 'relative', overflow: 'hidden',
     }}>
     <style>{`
       @keyframes driftX { 0%,100%{transform:translate(0,0)} 50%{transform:translate(40px,-20px)} }
       @keyframes driftY { 0%,100%{transform:translate(0,0)} 50%{transform:translate(-50px,30px)} }
       @keyframes driftZ { 0%,100%{transform:translate(0,0)} 50%{transform:translate(30px,25px)} }
       @keyframes pulse { 0%,100%{opacity:0.1;transform:scale(0.8)} 50%{opacity:0.8;transform:scale(1.2)} }
-      @keyframes flowSlow { 0%{transform:translateX(-10%);opacity:0} 20%{opacity:0.15} 80%{opacity:0.15} 100%{transform:translateX(100%);opacity:0} }
+      @keyframes flowSlow { 0%{transform:translateX(-10%);opacity:0} 20%{opacity:0.12} 80%{opacity:0.12} 100%{transform:translateX(100%);opacity:0} }
     `}</style>
     <svg width="860" height="280" style={{ position: 'absolute', top: 0, left: 0 }}>
       <defs>
-        <radialGradient id="n6" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(236, 72, 153, 0.3)" /><stop offset="100%" stopColor="rgba(236, 72, 153, 0)" /></radialGradient>
-        <radialGradient id="n7" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(147, 51, 234, 0.3)" /><stop offset="100%" stopColor="rgba(147, 51, 234, 0)" /></radialGradient>
-        <radialGradient id="n8" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 255, 255, 0.08)" /><stop offset="100%" stopColor="rgba(255, 255, 255, 0)" /></radialGradient>
+        <radialGradient id="n6" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(236, 72, 153, 0.15)" /><stop offset="100%" stopColor="rgba(236, 72, 153, 0)" /></radialGradient>
+        <radialGradient id="n7" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(147, 51, 234, 0.15)" /><stop offset="100%" stopColor="rgba(147, 51, 234, 0)" /></radialGradient>
+        <radialGradient id="n8" cx="50%" cy="50%" r="50%"><stop offset="0%" stopColor="rgba(255, 255, 255, 0.04)" /><stop offset="100%" stopColor="rgba(255, 255, 255, 0)" /></radialGradient>
       </defs>
 
       <g>
@@ -107,30 +107,30 @@
         <circle cx="780" cy="240" r="1.5" fill="#fff" style={{animation: 'pulse 3.5s infinite 0.5s'}} />
       </g>
 
-      <g stroke="rgba(255,255,255,0.15)" strokeWidth="1" fill="none">
-        <path d="M0,100 Q200,130 400,80 T860,110" style={{animation: 'flowSlow 18s linear infinite'}} />
-        <path d="M0,220 Q300,190 500,240 T860,210" style={{animation: 'flowSlow 24s linear infinite 5s'}} />
+      <g stroke="rgba(255,255,255,0.1)" strokeWidth="1" fill="none">
+        <path d="M0,100 Q200,130 400,80 T860,110" style={{animation: 'flowSlow 22s linear infinite'}} />
+        <path d="M0,220 Q300,190 500,240 T860,210" style={{animation: 'flowSlow 28s linear infinite 5s'}} />
       </g>
 
-      <g style={{ animation: 'driftX 26s ease-in-out infinite' }}>
+      <g style={{ animation: 'driftX 30s ease-in-out infinite' }}>
         <ellipse cx="200" cy="180" rx="160" ry="80" fill="url(#n6)" />
       </g>
-      <g style={{ animation: 'driftY 30s ease-in-out infinite' }}>
+      <g style={{ animation: 'driftY 34s ease-in-out infinite' }}>
         <ellipse cx="680" cy="200" rx="180" ry="90" fill="url(#n7)" />
       </g>
-      <g style={{ animation: 'driftZ 22s ease-in-out infinite' }}>
+      <g style={{ animation: 'driftZ 26s ease-in-out infinite' }}>
         <ellipse cx="430" cy="90" rx="140" ry="60" fill="url(#n8)" />
       </g>
     </svg>
-    <div style={{ zIndex: 10, display:'flex', fontSize:10, fontWeight:700, color:'rgba(216,180,254,0.5)', letterSpacing:'3px' }}>TECHNICAL SKILLS</div>
+    <div style={{ zIndex: 10, display:'flex', fontSize:10, fontWeight:700, color:'rgba(216,180,254,0.35)', letterSpacing:'3px' }}>TECHNICAL SKILLS</div>
     <div style={{ zIndex: 10, display:'flex', flexDirection:'column', gap:14 }}>
       {categories.map(function(cat) {
         return (
           <div key={cat.title} style={{ display:'flex', alignItems:'center', gap:16 }}>
-            <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', width:120 }}>{cat.title.toUpperCase()}</div>
+            <div style={{ display:'flex', fontSize:10, fontWeight:700, color:cat.color, letterSpacing:'1px', opacity:0.8, width:120 }}>{cat.title.toUpperCase()}</div>
             <div style={{ display:'flex', flexWrap:'wrap', gap:7 }}>
               {cat.items.map(function(item) {
-                return (<div key={item} style={{ display:'flex', padding:'4px 13px', borderRadius:6, background:cat.color+'15', border:'1px solid '+cat.color+'35', color:'rgba(244,220,255,0.9)', fontSize:12, fontWeight:600 }}>{item}</div>);
+                return (<div key={item} style={{ display:'flex', padding:'4px 13px', borderRadius:6, background:cat.color+'08', border:'1px solid '+cat.color+'22', color:'rgba(244,220,255,0.85)', fontSize:12, fontWeight:600 }}>{item}</div>);
               })}
             </div>
           </div>
@@ -161,10 +161,10 @@
 <SocialMediaButton
   icon="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg"
   text="GitHub"
-  backgroundColor="#16121f"
+  backgroundColor="#140f1a"
   width={120}
   height={44}
-  gradientStops={[{ offset: '0%', color: '#ffffff' }, { offset: '100%', color: '#ec4899' }]}
+  gradientStops={[{ offset: '0%', color: '#ffffff' }, { offset: '100%', color: 'rgba(236,72,153,0.5)' }]}
 />
 ```
 
@@ -175,7 +175,7 @@
   backgroundColor="#0f111a"
   width={140}
   height={44}
-  gradientStops={[{ offset: '0%', color: '#0077b5' }, { offset: '100%', color: '#8b5cf6' }]}
+  gradientStops={[{ offset: '0%', color: '#0077b5' }, { offset: '100%', color: 'rgba(139,92,246,0.5)' }]}
 />
 ```
 
@@ -183,9 +183,9 @@
 <SocialMediaButton
   icon="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gmail.svg"
   text="Email"
-  backgroundColor="#24141d"
+  backgroundColor="#20141a"
   width={100}
   height={44}
-  gradientStops={[{ offset: '0%', color: '#ffffff' }, { offset: '100%', color: '#ec4899' }]}
+  gradientStops={[{ offset: '0%', color: '#ffffff' }, { offset: '100%', color: 'rgba(236,72,153,0.5)' }]}
 />
 ```
