@@ -166,10 +166,10 @@
   </svg>
 
   <div style={{ display: 'flex', flexDirection: 'column', gap: 6, zIndex: 10, width: '580px' }}>
-    <div style={{ display: 'flex', fontSize: 18, fontWeight: 700, color: '#ffffff' }}>
+    <div style={{ display: 'flex', fontSize: 18, fontWeight: 700, color: '#ffffff', letterSpacing: '0.3px' }}>
       Vignette
     </div>
-    <div style={{ display: 'flex', fontSize: 13, color: 'rgba(255, 255, 255, 0.65)', lineHeight: 1.4, fontWeight: 400 }}>
+    <div style={{ display: 'flex', fontSize: 13, color: 'rgba(244, 220, 255, 0.75)', lineHeight: 1.4, fontWeight: 400, letterSpacing: '0.3px' }}>
       AI-powered thumbnail generation platform designed to help creators generate high-converting thumbnails through intelligent concept generation and image synthesis.
     </div>
   </div>
@@ -178,13 +178,13 @@
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'flex-end' }}>
       {['React', 'Node.js', 'Supabase', 'AI APIs'].map(function(tag) {
         return (
-          <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(236,72,153,0.06)', border: '1px solid rgba(236,72,153,0.25)', color: 'rgba(255,200,240,0.85)', fontSize: 10, fontWeight: 600 }}>
+          <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(236,72,153,0.12)', border: '1px solid rgba(236,72,153,0.35)', color: 'rgba(244,220,255,0.9)', fontSize: 10, fontWeight: 600 }}>
             {tag}
           </div>
         );
       })}
     </div>
-    <div style={{ display: 'flex', fontSize: 11, color: '#ec4899', fontWeight: 600 }}>
+    <div style={{ display: 'flex', fontSize: 11, color: '#ec4899', fontWeight: 600, letterSpacing: '0.3px' }}>
       View Repository →
     </div>
   </div>
@@ -211,10 +211,10 @@
   </svg>
 
   <div style={{ display: 'flex', flexDirection: 'column', gap: 6, zIndex: 10, width: '580px' }}>
-    <div style={{ display: 'flex', fontSize: 18, fontWeight: 700, color: '#ffffff' }}>
+    <div style={{ display: 'flex', fontSize: 18, fontWeight: 700, color: '#ffffff', letterSpacing: '0.3px' }}>
       Bluntly
     </div>
-    <div style={{ display: 'flex', fontSize: 13, color: 'rgba(255, 255, 255, 0.65)', lineHeight: 1.4, fontWeight: 400 }}>
+    <div style={{ display: 'flex', fontSize: 13, color: 'rgba(244, 220, 255, 0.75)', lineHeight: 1.4, fontWeight: 400, letterSpacing: '0.3px' }}>
       An AI-powered communication platform built to help users express ideas more effectively and communicate with greater clarity.
     </div>
   </div>
@@ -223,13 +223,13 @@
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'flex-end' }}>
       {['AI', 'Full Stack'].map(function(tag) {
         return (
-          <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(147,51,234,0.06)', border: '1px solid rgba(147,51,234,0.25)', color: 'rgba(230,200,255,0.85)', fontSize: 10, fontWeight: 600 }}>
+          <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(147,51,234,0.12)', border: '1px solid rgba(147,51,234,0.35)', color: 'rgba(244,220,255,0.9)', fontSize: 10, fontWeight: 600 }}>
             {tag}
           </div>
         );
       })}
     </div>
-    <div style={{ display: 'flex', fontSize: 11, color: '#a855f7', fontWeight: 600 }}>
+    <div style={{ display: 'flex', fontSize: 11, color: '#a855f7', fontWeight: 600, letterSpacing: '0.3px' }}>
       View Repository →
     </div>
   </div>
@@ -256,10 +256,10 @@
   </svg>
 
   <div style={{ display: 'flex', flexDirection: 'column', gap: 6, zIndex: 10, width: '580px' }}>
-    <div style={{ display: 'flex', fontSize: 18, fontWeight: 700, color: '#ffffff' }}>
+    <div style={{ display: 'flex', fontSize: 18, fontWeight: 700, color: '#ffffff', letterSpacing: '0.3px' }}>
       Drowsiness Detection System
     </div>
-    <div style={{ display: 'flex', fontSize: 13, color: 'rgba(255, 255, 255, 0.65)', lineHeight: 1.4, fontWeight: 400 }}>
+    <div style={{ display: 'flex', fontSize: 13, color: 'rgba(244, 220, 255, 0.75)', lineHeight: 1.4, fontWeight: 400, letterSpacing: '0.3px' }}>
       A real-time computer vision system that detects driver drowsiness using facial landmark analysis and eye-tracking techniques.
     </div>
   </div>
@@ -268,13 +268,13 @@
     <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'flex-end' }}>
       {['Python', 'OpenCV', 'Computer Vision'].map(function(tag) {
         return (
-          <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(236,72,153,0.06)', border: '1px solid rgba(236,72,153,0.25)', color: 'rgba(255,200,240,0.85)', fontSize: 10, fontWeight: 600 }}>
+          <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(236,72,153,0.12)', border: '1px solid rgba(236,72,153,0.35)', color: 'rgba(244,220,255,0.9)', fontSize: 10, fontWeight: 600 }}>
             {tag}
           </div>
         );
       })}
     </div>
-    <div style={{ display: 'flex', fontSize: 11, color: '#ec4899', fontWeight: 600 }}>
+    <div style={{ display: 'flex', fontSize: 11, color: '#ec4899', fontWeight: 600, letterSpacing: '0.3px' }}>
       View Repository →
     </div>
   </div>
