@@ -145,132 +145,138 @@
 <br>
 
 <div align="center">
-  <div style="font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 700; color: rgba(216,180,254,0.35); letter-spacing: 3px; margin-bottom: 16px;">FEATURED PROJECTS</div>
+  <div style="font-family: 'Inter', sans-serif; font-size: 10px; font-weight: 700; color: rgba(216,180,254,0.35); letter-spacing: 3px; margin-bottom: 16px;">FEATURED PROJECTS</div>
 </div>
 
-```aura width=272 height=220 link="https://github.com/nitya747/vignette_monorepo" inline align=center
+```aura width=860 height=120 link="https://github.com/nitya747/vignette_monorepo"
 <div style={{
   width: '100%', height: '100%', background: '#0d0b12',
-  display: 'flex', flexDirection: 'column', fontFamily: 'Inter',
-  padding: '20px', borderRadius: 12, border: '1px solid rgba(236, 72, 153, 0.16)',
+  display: 'flex', flexDirection: 'row', alignItems: 'center', fontFamily: 'Inter',
+  padding: '20px 32px', borderRadius: 16, border: '1px solid rgba(236, 72, 153, 0.16)',
   position: 'relative', overflow: 'hidden', justifyContent: 'space-between'
 }}>
-  <style>{`
-    @keyframes pulse { 0%,100%{opacity:0.1;transform:scale(0.8)} 50%{opacity:0.6;transform:scale(1.2)} }
-  `}</style>
-  <svg width="272" height="220" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="120" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
-      <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(236, 72, 153, 0.15)" />
+      <radialGradient id="nproj1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(236, 72, 153, 0.12)" />
         <stop offset="100%" stopColor="rgba(236, 72, 153, 0)" />
       </radialGradient>
     </defs>
-    <ellipse cx="136" cy="110" rx="100" ry="70" fill="url(#grad1)" />
-    <circle cx="40" cy="30" r="1" fill="#fff" style={{animation: 'pulse 3s infinite'}} />
-    <circle cx="230" cy="180" r="1" fill="#fff" style={{animation: 'pulse 4s infinite 1s'}} />
+    <ellipse cx="750" cy="60" rx="120" ry="50" fill="url(#nproj1)" />
   </svg>
-  
-  <div style={{ display: 'flex', flexDirection: 'column', gap: 6, zIndex: 10 }}>
-    <div style={{ display: 'flex', fontSize: 16, fontWeight: 700, color: '#ffffff', alignItems: 'center' }}>
-      🚀 Vignette
+
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 6, zIndex: 10, width: '580px' }}>
+    <div style={{ display: 'flex', fontSize: 18, fontWeight: 700, color: '#ffffff' }}>
+      Vignette
     </div>
-    <div style={{ display: 'flex', fontSize: 11.5, color: 'rgba(255, 255, 255, 0.65)', lineHeight: 1.4, fontWeight: 400 }}>
-      AI-powered thumbnail generation platform designed to help creators generate high-converting thumbnails.
+    <div style={{ display: 'flex', fontSize: 13, color: 'rgba(255, 255, 255, 0.65)', lineHeight: 1.4, fontWeight: 400 }}>
+      AI-powered thumbnail generation platform designed to help creators generate high-converting thumbnails through intelligent concept generation and image synthesis.
     </div>
   </div>
-  
-  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, zIndex: 10 }}>
-    {['React', 'Node.js', 'Supabase', 'AI'].map(function(tag) {
-      return (
-        <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(236,72,153,0.06)', border: '1px solid rgba(236,72,153,0.25)', color: 'rgba(255,200,240,0.85)', fontSize: 9.5, fontWeight: 600 }}>
-          {tag}
-        </div>
-      );
-    })}
+
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 10, zIndex: 10, width: '180px' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'flex-end' }}>
+      {['React', 'Node.js', 'Supabase', 'AI APIs'].map(function(tag) {
+        return (
+          <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(236,72,153,0.06)', border: '1px solid rgba(236,72,153,0.25)', color: 'rgba(255,200,240,0.85)', fontSize: 10, fontWeight: 600 }}>
+            {tag}
+          </div>
+        );
+      })}
+    </div>
+    <div style={{ display: 'flex', fontSize: 11, color: '#ec4899', fontWeight: 600 }}>
+      View Repository →
+    </div>
   </div>
 </div>
 ```
-```aura width=272 height=220 link="https://github.com/nitya747/bluntly" inline align=center
+
+<br>
+
+```aura width=860 height=120 link="https://github.com/nitya747/bluntly"
 <div style={{
   width: '100%', height: '100%', background: '#0d0b12',
-  display: 'flex', flexDirection: 'column', fontFamily: 'Inter',
-  padding: '20px', borderRadius: 12, border: '1px solid rgba(236, 72, 153, 0.16)',
+  display: 'flex', flexDirection: 'row', alignItems: 'center', fontFamily: 'Inter',
+  padding: '20px 32px', borderRadius: 16, border: '1px solid rgba(236, 72, 153, 0.16)',
   position: 'relative', overflow: 'hidden', justifyContent: 'space-between'
 }}>
-  <style>{`
-    @keyframes pulse { 0%,100%{opacity:0.1;transform:scale(0.8)} 50%{opacity:0.6;transform:scale(1.2)} }
-  `}</style>
-  <svg width="272" height="220" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="120" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
-      <radialGradient id="grad2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(147, 51, 234, 0.15)" />
+      <radialGradient id="nproj2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(147, 51, 234, 0.12)" />
         <stop offset="100%" stopColor="rgba(147, 51, 234, 0)" />
       </radialGradient>
     </defs>
-    <ellipse cx="136" cy="110" rx="100" ry="70" fill="url(#grad2)" />
-    <circle cx="50" cy="170" r="1" fill="#fff" style={{animation: 'pulse 3.5s infinite'}} />
-    <circle cx="210" cy="40" r="1" fill="#fff" style={{animation: 'pulse 4.5s infinite 1.5s'}} />
+    <ellipse cx="750" cy="60" rx="120" ry="50" fill="url(#nproj2)" />
   </svg>
-  
-  <div style={{ display: 'flex', flexDirection: 'column', gap: 6, zIndex: 10 }}>
-    <div style={{ display: 'flex', fontSize: 16, fontWeight: 700, color: '#ffffff', alignItems: 'center' }}>
-      🎙️ Bluntly
+
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 6, zIndex: 10, width: '580px' }}>
+    <div style={{ display: 'flex', fontSize: 18, fontWeight: 700, color: '#ffffff' }}>
+      Bluntly
     </div>
-    <div style={{ display: 'flex', fontSize: 11.5, color: 'rgba(255, 255, 255, 0.65)', lineHeight: 1.4, fontWeight: 400 }}>
-      An AI-powered communication platform built to help users express ideas more effectively and communicate with clarity.
+    <div style={{ display: 'flex', fontSize: 13, color: 'rgba(255, 255, 255, 0.65)', lineHeight: 1.4, fontWeight: 400 }}>
+      An AI-powered communication platform built to help users express ideas more effectively and communicate with greater clarity.
     </div>
   </div>
-  
-  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, zIndex: 10 }}>
-    {['AI', 'Full Stack', 'Next.js'].map(function(tag) {
-      return (
-        <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(147,51,234,0.06)', border: '1px solid rgba(147,51,234,0.25)', color: 'rgba(230,200,255,0.85)', fontSize: 9.5, fontWeight: 600 }}>
-          {tag}
-        </div>
-      );
-    })}
+
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 10, zIndex: 10, width: '180px' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'flex-end' }}>
+      {['AI', 'Full Stack'].map(function(tag) {
+        return (
+          <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(147,51,234,0.06)', border: '1px solid rgba(147,51,234,0.25)', color: 'rgba(230,200,255,0.85)', fontSize: 10, fontWeight: 600 }}>
+            {tag}
+          </div>
+        );
+      })}
+    </div>
+    <div style={{ display: 'flex', fontSize: 11, color: '#a855f7', fontWeight: 600 }}>
+      View Repository →
+    </div>
   </div>
 </div>
 ```
-```aura width=272 height=220 link="https://github.com/nitya747/drowsiness-detection-system" inline align=center
+
+<br>
+
+```aura width=860 height=120 link="https://github.com/nitya747/drowsiness-detection-system"
 <div style={{
   width: '100%', height: '100%', background: '#0d0b12',
-  display: 'flex', flexDirection: 'column', fontFamily: 'Inter',
-  padding: '20px', borderRadius: 12, border: '1px solid rgba(236, 72, 153, 0.16)',
+  display: 'flex', flexDirection: 'row', alignItems: 'center', fontFamily: 'Inter',
+  padding: '20px 32px', borderRadius: 16, border: '1px solid rgba(236, 72, 153, 0.16)',
   position: 'relative', overflow: 'hidden', justifyContent: 'space-between'
 }}>
-  <style>{`
-    @keyframes pulse { 0%,100%{opacity:0.1;transform:scale(0.8)} 50%{opacity:0.6;transform:scale(1.2)} }
-  `}</style>
-  <svg width="272" height="220" style={{ position: 'absolute', top: 0, left: 0 }}>
+  <svg width="860" height="120" style={{ position: 'absolute', top: 0, left: 0 }}>
     <defs>
-      <radialGradient id="grad3" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stopColor="rgba(236, 72, 153, 0.15)" />
+      <radialGradient id="nproj3" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stopColor="rgba(236, 72, 153, 0.12)" />
         <stop offset="100%" stopColor="rgba(236, 72, 153, 0)" />
       </radialGradient>
     </defs>
-    <ellipse cx="136" cy="110" rx="100" ry="70" fill="url(#grad3)" />
-    <circle cx="60" cy="50" r="1" fill="#fff" style={{animation: 'pulse 4s infinite'}} />
-    <circle cx="220" cy="150" r="1" fill="#fff" style={{animation: 'pulse 3s infinite 2s'}} />
+    <ellipse cx="750" cy="60" rx="120" ry="50" fill="url(#nproj3)" />
   </svg>
-  
-  <div style={{ display: 'flex', flexDirection: 'column', gap: 6, zIndex: 10 }}>
-    <div style={{ display: 'flex', fontSize: 16, fontWeight: 700, color: '#ffffff', alignItems: 'center' }}>
-      😴 Drowsiness Detector
+
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 6, zIndex: 10, width: '580px' }}>
+    <div style={{ display: 'flex', fontSize: 18, fontWeight: 700, color: '#ffffff' }}>
+      Drowsiness Detection System
     </div>
-    <div style={{ display: 'flex', fontSize: 11.5, color: 'rgba(255, 255, 255, 0.65)', lineHeight: 1.4, fontWeight: 400 }}>
-      A real-time computer vision system that detects driver drowsiness using facial landmark analysis and eye-tracking.
+    <div style={{ display: 'flex', fontSize: 13, color: 'rgba(255, 255, 255, 0.65)', lineHeight: 1.4, fontWeight: 400 }}>
+      A real-time computer vision system that detects driver drowsiness using facial landmark analysis and eye-tracking techniques.
     </div>
   </div>
-  
-  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, zIndex: 10 }}>
-    {['Python', 'OpenCV', 'Computer Vision'].map(function(tag) {
-      return (
-        <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(236,72,153,0.06)', border: '1px solid rgba(236,72,153,0.25)', color: 'rgba(255,200,240,0.85)', fontSize: 9.5, fontWeight: 600 }}>
-          {tag}
-        </div>
-      );
-    })}
+
+  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', gap: 10, zIndex: 10, width: '180px' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'flex-end' }}>
+      {['Python', 'OpenCV', 'Computer Vision'].map(function(tag) {
+        return (
+          <div key={tag} style={{ display: 'flex', padding: '3px 8px', borderRadius: 4, background: 'rgba(236,72,153,0.06)', border: '1px solid rgba(236,72,153,0.25)', color: 'rgba(255,200,240,0.85)', fontSize: 10, fontWeight: 600 }}>
+            {tag}
+          </div>
+        );
+      })}
+    </div>
+    <div style={{ display: 'flex', fontSize: 11, color: '#ec4899', fontWeight: 600 }}>
+      View Repository →
+    </div>
   </div>
 </div>
 ```
