@@ -154,7 +154,7 @@
     },
     {
       title: 'Bluntly',
-      desc: 'An AI-powered communication platform built to help users express ideas more effectively and communicate with greater clarity.',
+      desc: 'A premium, privacy-first open-source AI resume analyser and candidate matching dashboard. Built specifically to help computer science students optimize their resumes, Bluntly parses, scrubs, evaluates, and ranks resumes against real-world job descriptions.',
       tags: ['AI', 'Full Stack']
     },
     {
